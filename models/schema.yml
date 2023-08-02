@@ -1,0 +1,35 @@
+version: 2
+
+models:
+
+    - name: sales
+      tests:
+        - unique:
+            column_name: "(orders_id || '-' || products_id)"
+            
+      columns:
+          - name: orders_id
+          description: PK, numéro de commande
+            tests : 
+            - not_null 
+
+          - name: products_id
+          description : PK, id du produit 
+          tests : 
+            - not_null
+
+          - name: qty
+          description : quantité 
+
+          - name: turnover
+          description : chriffres d'affaires 
+          tests : 
+            - not_null
+
+          - name: purchase_cost
+          description : cout d'achats des produits 
+          tests : 
+            - not_null
+
+          - name: margin
+          description : marge effectuée
