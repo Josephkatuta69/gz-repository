@@ -9,27 +9,26 @@ models:
             
       columns:
           - name: orders_id
-          description: PK, numéro de commande
+            description: PK - numéro de commande
             tests : 
             - not_null 
-
           - name: products_id
-          description : PK, id du produit 
-          tests : 
+            description : id du produit 
+            tests : 
             - not_null
 
           - name: qty
-          description : quantité 
+            description : quantité 
 
           - name: turnover
-          description : chriffres d'affaires 
-          tests : 
+            description : chiffres d'affaires 
+            tests : 
             - not_null
 
           - name: purchase_cost
-          description : cout d'achats des produits 
-          tests : 
+            description : cout d'achats des produits 
+            tests : 
             - not_null
 
           - name: margin
-          description : marge effectuée
+            description : marge effectuée
